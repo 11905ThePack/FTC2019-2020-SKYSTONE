@@ -31,12 +31,18 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-//import com.qualcomm.robotcore.hardware.ColorSensor;
+
+//Import Hardware
 import com.qualcomm.robotcore.hardware.DcMotor;
-//import com.qualcomm.robotcore.hardware.GyroSensor;
 import com.qualcomm.robotcore.hardware.Servo;
-import com.qualcomm.robotcore.hardware.TouchSensor;
+
+//Import Elpased Time
 import com.qualcomm.robotcore.util.ElapsedTime;
+
+//Import Sensors
+import com.qualcomm.robotcore.hardware.TouchSensor;
+//import com.qualcomm.robotcore.hardware.ColorSensor;
+//import com.qualcomm.robotcore.hardware.GyroSensor;
 
 @Autonomous(name = "MainAutonomous", group = "First")
 
@@ -58,10 +64,7 @@ public class MainAutonomous extends LinearOpMode {
     private DcMotor DriveRightFront;
     private DcMotor DriveRightRear;
 
-    DcMotor MotorRobotLifter;
-
     //Servos
-    Servo ServoRobotLifter;
 
     //Colour Sensors
 
@@ -103,9 +106,6 @@ public class MainAutonomous extends LinearOpMode {
         DriveLeftRear.setDirection(DcMotor.Direction.REVERSE);
         DriveRightFront = hardwareMap.get(DcMotor.class, "DriveRightFront");
         DriveRightRear = hardwareMap.get(DcMotor.class, "DriveRightRear");
-
-        MotorRobotLifter = hardwareMap.get(DcMotor.class,"RobotLifter");
-        ServoRobotLifter = hardwareMap.get(Servo.class,"ServoRobotLifter");
 
         telemetry.update();
 
