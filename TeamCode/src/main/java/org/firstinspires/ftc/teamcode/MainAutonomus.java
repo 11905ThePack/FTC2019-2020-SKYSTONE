@@ -43,20 +43,20 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 public class MainAutonomous extends LinearOpMode {
 
     //Team Checker
-    TouchSensor TeamBlueSwitch;
-    TouchSensor Position1Switch;
+    private TouchSensor TeamBlueSwitch;
+    private TouchSensor Position1Switch;
 
     //Elapsed Time
-    ElapsedTime eTime = new ElapsedTime();
-    ElapsedTime eTime2 = new ElapsedTime();
-    ElapsedTime total_eTime = new ElapsedTime();
-    ElapsedTime runtime = new ElapsedTime();
+    private ElapsedTime eTime = new ElapsedTime();
+    private ElapsedTime eTime2 = new ElapsedTime();
+    private ElapsedTime total_eTime = new ElapsedTime();
+    private ElapsedTime runtime = new ElapsedTime();
 
     //Motors
-    DcMotor DriveLeftFront;
-    DcMotor DriveLeftRear;
-    DcMotor DriveRightFront;
-    DcMotor DriveRightRear;
+    private DcMotor DriveLeftFront;
+    private DcMotor DriveLeftRear;
+    private DcMotor DriveRightFront;
+    private DcMotor DriveRightRear;
 
     DcMotor MotorRobotLifter;
 
