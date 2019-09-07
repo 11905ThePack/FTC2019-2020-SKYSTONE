@@ -35,7 +35,6 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 //Import Hardware
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
-
 //Import Elpased Time
 import com.qualcomm.robotcore.util.ElapsedTime;
 
