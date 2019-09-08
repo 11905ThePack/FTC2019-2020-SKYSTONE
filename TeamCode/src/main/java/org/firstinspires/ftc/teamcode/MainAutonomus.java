@@ -122,6 +122,8 @@ public class MainAutonomous extends LinearOpMode {
         while (opModeIsActive()) {
 
             //Instructions for robot go here
+            encoderDriveStraight(0.2,10,10);
+
 
             if (TeamBlueSwitchRead)  {
 
